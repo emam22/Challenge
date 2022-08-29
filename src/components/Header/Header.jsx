@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import Guia from '../Guia/Guia'
+import 'materialize-css/dist/css/materialize.min.css'
 
 export default function GitHubContainer() {
     const [userGit, setUserGit] = useState([""])
