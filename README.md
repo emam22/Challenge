@@ -1,6 +1,8 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# GitHub repository browser
+It is a GitHub repositories search engine, in order to be able to find its data and its repositories by means of the username
 
 ## Available Scripts
 

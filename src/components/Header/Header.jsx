@@ -7,8 +7,7 @@ export default function GitHubContainer() {
     const [search, setSearch] = useState("")
     const [userGit, setUserGit] = useState({})
     const [projects, setProjects] = useState([ ])
-    const [errorMjs, setErrorMjs] = useState("")
-    
+    const [errorMjs, setErrorMjs] = useState("")    
 
     const handleChange = e => {
         setSearch(e.target.value);
@@ -71,7 +70,7 @@ export default function GitHubContainer() {
             </form>
             </div>
         </nav>
-        <header className="row card-panel ">
+        <main className="row card-panel ">
         {
             userGit && userGit.name
             ?   <> 
@@ -82,8 +81,9 @@ export default function GitHubContainer() {
                             </div>
                             <div className="card-content deep-purple lighten-1 ">
                                 <h4 className="card-title activator grey-text text-darken-4 ">{userGit.name}</h4>
-                                <p> <i className="material-icons tiny">location_on</i>{userGit.location} <br/>
-                                <i className="material-icons tiny">account_circle</i>{userGit.login}</p>
+                                <p> <i className="material-icons tiny">account_circle</i>{userGit.login} <br/>
+                                <i className="material-icons tiny">description</i>{userGit.bio} 
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -97,8 +97,8 @@ export default function GitHubContainer() {
                                     <div key={project.id}>
                                         <li className="collection-item deep-purple lighten-1">
                                             <div> 
-                                                <h5>{project.name}</h5> 
                                                 <a href={project.html_url} className="secondary-content"><i className="material-icons">folder_special</i></a>
+                                                <h5>{project.name}</h5> 
                                                 <p> {project.description} </p> 
                                             </div>
                                         </li>
@@ -112,7 +112,7 @@ export default function GitHubContainer() {
                 </>
             :   <Guia/>
         }
-        </header>
+        </main>
     </>
   )
 }

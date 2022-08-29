@@ -1,20 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
-import GitHubContainer from './components/Header/Header';
-import Footer from './components/footer/footer';
-import NavBar from './components/NavBar/NavBar';
+import { AppRouting } from './components/Routing/Routing';
 
 class App extends Component {
 
   render() {
     return (
-      <body className="">
-        <NavBar/>
-        <div className="container orange lighten-2">
-          <GitHubContainer/>
-        </div>
-        <Footer/>
-      </body>
+         
+          <AppRouting/>
     );
   }
 }

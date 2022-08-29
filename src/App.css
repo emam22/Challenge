@@ -7,9 +7,13 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-family: 'Barlow Condensed', sans-serif;
   }
 
 main {
     flex: 1 0 auto;
   }
+footer {
+  margin-top: 200px
+}
     
