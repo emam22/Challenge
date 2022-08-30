@@ -74,7 +74,7 @@ export default function GitHubContainer() {
         {
             userGit && userGit.name
             ?   <> 
-                    <div className="col s3 ">
+                    <div className="col s5 m4 ">
                         <div className="card">
                             <div className="card-image waves-effect waves-block waves-light">
                                 <img className="activator" src={userGit.avatar_url} alt="avatar_url"/>
@@ -88,7 +88,7 @@ export default function GitHubContainer() {
                         </div>
                     </div>
 
-                    <div className="col s9">
+                    <div className="col s7 m8">
 
                         <ul className="collection with-header">                    
                             <li className="collection-header center-align deep-purple darken-2"><h4>Repositorios</h4></li>

@@ -4,7 +4,7 @@ export default function Guia() {
   return (
     <div className="row">
 
-    <div className="col s2">
+    <div className="col s4 m3">
         <div className="preloader-wrapper big active ">
             <div className="spinner-layer spinner-blue-only">
                 <div className="circle-clipper left">
@@ -17,7 +17,7 @@ export default function Guia() {
             </div>
         </div>
     </div>
-    <div className="col s8 ">
+    <div className="col s8 m7">
       <div class="col s12 m7">
       <div class="card horizontal">
         <div class="card-stacked">
@@ -28,7 +28,7 @@ export default function Guia() {
       </div>
       </div>
     </div>
-    <div className="col s2">
+    <div className="col s9 m1">
         <div className="preloader-wrapper big active ">
             <div className="spinner-layer spinner-blue-only">
                 <div className="circle-clipper left">
